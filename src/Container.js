@@ -3,15 +3,16 @@ import ReservationCard from './ReservationCard';
 import './Container.css'
 
 const Container = ({ reservationData }) => {
-    const cards = reservationData.map(() => {
+    console.log('data', reservationData)
+    const cards = reservationData.map(card => {
         return (
             <ReservationCard 
-                key={reservationData.id}
-                id={reservationData.id}
-                name={reservationData.name}
-                date={reservationData.date}
-                time={reservationData.time}
-                numGuests={reservationData.number}
+                key={card.id}
+                id={card.id}
+                name={card.name}
+                date={card.date}
+                time={card.time}
+                numGuests={card.number}
             />
         )
     })

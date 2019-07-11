@@ -1,14 +1,17 @@
 .resi-card {
     background-color: white;
-    border: solid 2px #008080;
+    border: solid 3px #008080;
     border-radius: 10px;
-    height: 200px;
-    /* margin: 15px; */
+    /* height: 200px; */
+    margin: 5px;
+    padding: 12px;
     width: 200px;
 
 }
 
 .cancel-btn {
     background-color: #008080;
+    border: none;
     color: white;
+
 }
