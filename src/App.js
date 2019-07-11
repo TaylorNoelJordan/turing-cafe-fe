@@ -9,7 +9,6 @@ class App extends Component {
     super();
     this.state = {
       reservationData: [],
-
     };
   }
 
@@ -24,14 +23,12 @@ class App extends Component {
     const options = {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({ ...newRes })
+      body: JSON.stringify({newRes})
     }
 
     fetch('http://localhost:3001/api/v1/reservations', options)
     .then(response => response.json())
-    .then(response => fetch(`http://localhost:3001/api/v1/reservations/${response.id}`))
-    .then(response => response.json())
-    .then(newRes => this.setState({ reservationData: [...this.state.reservationData, newRes] }))
+    .then(newNewRes => this.setState({ reservationData: [...this.state.reservationData, newNewRes] }))
     .catch(err => console.log(err))
   }
 
@@ -41,12 +38,10 @@ class App extends Component {
       <div className="App">
         <h1 className='app-title'>Turing Cafe Reservations</h1>
         <div className='resy-form'>
-
+          <ResForm addReservation={this.addReservation}/>
         </div>
         <div className='resy-container'>
-          <ResForm addReservation={this.addReservation}/>
           <Container reservationData={this.state.reservationData}/>
-          
         </div>
       </div>
     )
