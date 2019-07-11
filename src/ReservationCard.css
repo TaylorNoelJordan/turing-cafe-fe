@@ -1,0 +1,14 @@
+.resi-card {
+    background-color: white;
+    border: solid 2px #008080;
+    border-radius: 10px;
+    height: 200px;
+    /* margin: 15px; */
+    width: 200px;
+
+}
+
+.cancel-btn {
+    background-color: #008080;
+    color: white;
+}
