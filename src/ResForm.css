@@ -1,0 +1,28 @@
+.resi-form {
+    border: solid 3px #008080;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    padding: 20px;
+    width: 700px;
+}
+
+input {
+    font-size: 14px;
+    height: 50px;
+    margin: 5px;
+}
+
+.res-label {
+    color: white;
+    font-size: 26px;
+}
+
+.submit-resi-btn {
+    background-color: white;
+    color: #008080;
+    font-size: 25px;
+    height: 50px;
+}

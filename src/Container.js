@@ -3,7 +3,7 @@ import ReservationCard from './ReservationCard';
 import './Container.css'
 
 const Container = ({ reservationData }) => {
-    console.log('data', reservationData)
+  
     const cards = reservationData.map(card => {
         return (
             <ReservationCard 
